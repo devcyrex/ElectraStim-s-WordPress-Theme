@@ -1,0 +1,14 @@
+.mobile_hide{
+
+	display: none;
+}
+
+.desktop_hide{
+
+	display: inline-block;
+}
+
+.fixed_background_image{
+
+	display: none;
+}

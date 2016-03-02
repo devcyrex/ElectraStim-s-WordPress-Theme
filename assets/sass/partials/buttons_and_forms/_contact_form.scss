@@ -1,0 +1,32 @@
+.contactbuddy-form{
+
+	/*Labels*/
+	.contactbuddy-name-label, .contactbuddy-email-label, .contactbuddy-subject-label, .contactbuddy-message-label{
+
+		> label{
+
+			font-size: 30px;
+			font-weight: 300;
+			color: $black;
+		}
+	}
+
+	/*inputs*/
+	.contactbuddy-name-input, .contactbuddy-email-input, .contactbuddy-subject-input, .contactbuddy-message-input{
+
+		> input{
+
+			font-size: 15px;
+			height: 35px;
+		}
+	}
+
+	/*buttons*/
+	.contactbuddy-submit{
+
+		> input{
+
+			// @include btn-alert();
+		}
+	}
+}

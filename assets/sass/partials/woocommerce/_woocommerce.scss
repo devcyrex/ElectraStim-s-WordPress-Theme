@@ -1,0 +1,28 @@
+/*sets the font size on the product list page.*/
+.shop .shop-item .item-info h3 a, .woocommerce .shop-item .item-info h3 a{
+	
+	font-size: 17px;
+}
+
+/*sets the featured icon to be round when in moblie.*/
+.shop .shop-item .onsale.featured, .woocommerce .shop-item .onsale.featured{
+
+	@include border-radius(100px);
+}
+
+/*Fixes the bug that makes the text over flow to the add to cart icon and option icon*/
+h3.no-right-margin{
+
+	padding-left: 5px;
+}
+
+/*Sets the hover effect on the flags. Single product.*/
+img.vc_single_image-img.attachment-thumbnail:hover{
+
+	@include opacity(0.5);
+}
+
+.onsale{
+
+	background-color: #B57700;
+}

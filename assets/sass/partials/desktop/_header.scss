@@ -1,0 +1,127 @@
+header{
+
+	&.site-header {
+		background: $desktop_header_colour;
+	}
+
+	> .container{
+
+		padding-right: 0px;
+		padding-left: 0px;
+	    padding-top: 0px;
+		background-color: $desktop_header_colour;
+	}
+
+	&.site-header.sticky.sticked div.nav>ul>li>a:after, &.site-header.sticky.sticked ul.nav>li>a:after{
+	
+		background-color: $desktop_header_colour_hover;
+	}
+
+	//Sub menu font colour
+	&.site-header div.nav>ul li ul li.current-menu-ancestor>a, &.site-header div.nav>ul li ul li.current-menu-item>a, &.site-header div.nav>ul li ul li.current_page_ancestor>a, &.site-header div.nav>ul li ul li.current_page_item>a, &.site-header ul.nav li ul li.current-menu-ancestor>a, &.site-header ul.nav li ul li.current-menu-item>a, &.site-header ul.nav li ul li.current_page_ancestor>a, &.site-header ul.nav li ul li.current_page_item>a{
+	
+		background-color:$desk_top_header_sub_menu_colour;
+	}
+
+	&.site-header div.nav>ul>li>a:after, &.site-header ul.nav>li>a:after{
+		background: $desktop_header_colour_after;
+	}
+
+	//Sub menu colour
+	&.site-header ul.nav>li:hover>a{
+		background-color: $desk_top_header_sub_menu_background;	
+	}
+
+	&.site-header div.nav>ul li.sub-visible>a, &.site-header ul.nav li.sub-visible>a {
+		background-color: $desk_top_header_sub_menu_background;
+	}
+
+	&.site-header div.nav>ul li ul, &.site-header ul.nav li ul{
+		background-color: $desk_top_header_sub_menu_background;
+	}
+
+	//top level font hover colour.
+	&.site-header div.nav>ul>li>a:hover, &.site-header ul.nav>li>a:hover{
+		color: $desktop_header_colour_hover;
+
+		@include transition-property(all);
+    	@include transition-duration(0.2s);
+
+    	@include transition-timing-function(ease-in);
+	}
+
+	//top level font hover colour.
+	&.site-header div.nav>ul>li, &.site-header ul.nav>li:hover{
+		color: $desktop_header_colour_hover;
+	}
+
+	//top level font hover colour.
+	.sub-menu > &.site-header div.nav > ul li a:hover, &.site-header ul.nav li a:hover{
+		color: $desktop_header_colour_hover;
+	}
+
+	//sub menu font hover colour.
+	.sub-menu > &.site-header div.nav>ul li a:hover, &.site-header ul.nav li a:hover{
+
+		color: $desktop_header_colour;
+	}
+
+	&.site-header.sticky.sticked div.nav>ul>li>a:after, &.site-header.sticky.sticked ul.nav>li>a:after{
+	
+		background-color: #222;
+	}
+
+	.sub-menu > &.site-header div.nav > ul li a:hover, &.site-header ul.nav li a:hover{
+
+		color:$desktop_header_colour_hover;
+		text-decoration: none;
+	}
+
+	.header.site-header div.nav > ul li a, &.site-header ul.nav li a:hover{
+
+		color: $desktop_header_colour_hover;
+	}
+
+	&.site-header div.nav>ul li ul li:hover>a, &.site-header ul.nav li ul li:hover>a{
+
+		color: $desktop_header_colour_hover;
+	}
+
+	&.site-header.sticky.sticked div.nav > ul > li > a:after, &.site-header.sticky.sticked ul.nav > li > a:after{
+
+		background-color: white;
+	}
+
+	/*Changes the background colour of the sub menu when the user is hovering over an item*/
+	&.site-header div.nav>ul li ul li:hover>a, &.site-header ul.nav li ul li:hover>a{
+		background-color: $desktop_header_sub_menu_hover_color;
+	}
+}
+
+/*gets reid of the bug that makes the nav button show up white when clicked*/
+.nav>li>a:hover, .nav>li>a:focus{
+	background: #222;
+}
+
+div.nav>ul li a, header.site-header ul.nav li a:selection {
+	color: #fff;
+}
+
+// header font colour
+.header.site-header div.nav>ul li a, header.site-header ul.nav li a {
+	color: $header_font_colour;
+}
+
+.header.site-header.sticky.sticked div.nav>ul>li>a, header.site-header.sticky.sticked ul.nav>li>a {
+    color: $header_font_colour;
+}
+
+/*gets reid of the bug that makes the nav button show up white when clicked*/
+.nav>li>a:hover, .nav>li>a:focus{
+	background: $desktop_header_colour;
+}
+
+.site-header .ubermenu.ubermenu-skin-none .ubermenu-item.ubermenu-item-level-0:hover>.ubermenu-target{
+	background-color: #545454;
+}
+

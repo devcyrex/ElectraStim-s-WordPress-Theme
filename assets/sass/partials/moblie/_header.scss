@@ -1,0 +1,47 @@
+//header colour
+header{
+
+	&.mobile-menu .mobile-logo{
+	
+		border-color: $moblie_header_colour;
+	}
+
+	&.mobile-menu .cart-info a:hover{
+	
+		background-color:$moblie_header_colour_hover;
+	}
+
+	&.mobile-menu ul.mobile-menu li a:hover{
+		background: #4E4D4D;
+	}
+
+	//the little cross at the end of the row.
+	&.mobile-menu {
+		background-color:$moblie_header_cross_colour;
+	}
+
+	//top level menu setting.
+	&.mobile-menu div.mobile-menu>ul li a, &.mobile-menu ul.mobile-menu li a{
+
+		background: #222;
+		border-bottom: $moblie_header_sub_menu_border_style;
+		color: #eee;
+	}
+
+	//fixes the border of the cross on the lef side.
+	&.mobile-menu div.mobile-menu>ul li a .sub-menu-indicator, &.mobile-menu ul.mobile-menu li a .sub-menu-indicator {
+		border-left: $moblie_header_sub_menu_border_style;
+		background: none;
+	}
+
+	//sub menu background colour.
+	&.mobile-menu div.mobile-menu>ul li ul li a, &.mobile-menu ul.mobile-menu li ul li a{
+
+		background: $moblie_header_sub_menu_colour;
+	}
+
+	&.mobile-menu .cart-info a {
+		border-bottom: $moblie_header_sub_menu_border_style;
+		color: #eee;
+	}
+}

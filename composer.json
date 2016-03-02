@@ -1,0 +1,18 @@
+{
+  "name": "ElectraStim/wordpress-theme",
+  "type": "project",
+  "homepage" : "http://www.electrastim.com",
+  "license": "MIT",
+
+  "authors": [{
+      "name": "James Hudson",
+      "email": "James@hudson.gb.com",
+      "homepage": "http://www.hudson.gb.com",
+      "role": "Developer"
+    }
+  ],
+
+  "require-dev":{
+    "phpunit/phpunit": "4.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+/*used to define the styling on the links at the top of the homepage.*/
+.homepage_quick_links{
+	color:#585858;
+	height: 1.5em;
+	margin-top:5px;
+	
+    border-right-color: #969696;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+/*fixes a bug where the last links margin*/
+.no_margin_bottom{
+	
+	height:35px;
+	margin-bottom: 0px;
+}
+
+@media screen and (max-width: 300px) {
+    .homepage_quick_links {
+        
+        display: none;
+    }
+}

@@ -1,0 +1,27 @@
+/*overrides padding and set it to 0px*/
+.no_padding_right{
+	
+	padding-right: 0px;
+}
+.no_padding_left{
+	padding-left: 0px;
+}
+
+.no_padding_bottom{
+	padding-bottom: 0px;
+}
+
+.no_padding_top{
+	padding-top: 0px;
+}
+
+/*overrides the max width and sets it to 100%*/
+.max_width{
+	
+	max-width: 100%;
+}
+
+::selection{
+
+	background:#82828B;
+}
