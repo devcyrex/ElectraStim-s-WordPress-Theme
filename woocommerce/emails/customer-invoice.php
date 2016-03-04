@@ -1,86 +1,54 @@
 <?php
 /**
- * Customer invoice email
+ * Customer invoice email (plain text)
  *
- * @author 		WooThemes
- * @package 	WooCommerce/Templates/Emails
- * @version     2.4.0
+ * @author		WooThemes
+ * @package		WooCommerce/Templates/Emails/Plain
+ * @version		2.2.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-require_once("functions.php");
+echo "= " . $email_heading . " =\n\n";
 
-?>
+if ( $order->has_status( 'pending' ) )
+	echo sprintf( __( 'An order has been created for you on %s. To pay for this order please use the following link: %s', 'woocommerce' ), get_bloginfo( 'name', 'display' ), $order->get_checkout_payment_url() ) . "\n\n";
 
-<?php do_action( 'woocommerce_email_header', $email_heading ); ?>
+echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 
-<?php if ( $order->has_status( 'pending' ) ) : ?>
+do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text );
 
-	<p><?php printf( __( 'An order has been created for you on %s. To pay for this order please use the following link: %s', 'woocommerce' ), get_bloginfo( 'name', 'display' ), '<a href="' . esc_url( $order->get_checkout_payment_url() ) . '">' . __( 'pay', 'woocommerce' ) . '</a>' ); ?></p>
+echo strtoupper( sprintf( __( 'Order number: %s', 'woocommerce' ), $order->get_order_number() ) ) . "\n";
+echo date_i18n( __( 'jS F Y', 'woocommerce' ), strtotime( $order->order_date ) ) . "\n";
 
-<?php endif; ?>
+do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text );
 
-<?php do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text ); ?>
+echo "\n";
 
-<h2><?php printf( __( 'Order #%s', 'woocommerce' ), $order->get_order_number() ); ?> (<?php printf( '<time datetime="%s">%s</time>', date_i18n( 'c', strtotime( $order->order_date ) ), date_i18n( wc_date_format(), strtotime( $order->order_date ) ) ); ?>)</h2>
+switch ( $order->get_status() ) {
+	case "completed" :
+		echo $order->email_order_items_table( $order->is_download_permitted(), false, true, '', '', true );
+	break;
+	case "processing" :
+		echo $order->email_order_items_table( $order->is_download_permitted(), true, true, '', '', true );
+	break;
+	default :
+		echo $order->email_order_items_table( $order->is_download_permitted(), true, false, '', '', true );
+	break;
+}
 
-<table class="td" cellspacing="0" cellpadding="6" style="width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;" border="1">
-	<thead>
-		<tr>
-			<th class="td" scope="col" style="text-align:left;"><?php _e( 'Product', 'woocommerce' ); ?></th>
-			<th class="td" scope="col" style="text-align:left;"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
-			<th class="td" scope="col" style="text-align:left;"><?php _e( 'Price', 'woocommerce' ); ?></th>
-		</tr>
-	</thead>
-	<tbody>
-		<?php
-			switch ( $order->get_status() ) {
-				case "completed" :
-					echo $order->email_order_items_table( $order->is_download_permitted(), false, true );
-				break;
-				case "processing" :
-					echo $order->email_order_items_table( $order->is_download_permitted(), true, true );
-				break;
-				default :
-					echo $order->email_order_items_table( $order->is_download_permitted(), true, false );
-				break;
-			}
-		?>
-	</tbody>
-	<tfoot>
-		<?php
-			if ( $totals = $order->get_order_item_totals() ) {
+echo "==========\n\n";
 
-				$i = 0;
-				foreach ( $totals as $total ) {
+if ( $totals = $order->get_order_item_totals() ) {
+	foreach ( $totals as $total ) {
+		echo $total['label'] . "\t " . $total['value'] . "\n";
+	}
+}
 
-					if($total['label'] === "Total:"){
+echo "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 
-						$country = get_post_meta($order->id,'_billing_country',true);
+do_action( 'woocommerce_email_after_order_table', $order, $sent_to_admin, $plain_text );
 
-						$total['value'] = format_price(remove_vat($total["label"], $total['value'], $order), $country);
-						
-					}else if($total['label'] === "Shipping:"){
-
-						$shipping_details = $total['value'];
-					}
-
-					$i++;
-					?><tr>
-						<td class="td" colspan="2" style="text-align:left; <?php if ( $i == 1 ) echo 'border-top-width: 4px !important;'; ?>"><?php echo $total['label']; ?></td>
-						<td class="td" style="text-align:left; <?php if ( $i == 1 ) echo 'border-top-width: 4px !important;'; ?>"><?php echo $total['value']; ?></td>
-					</tr><?php
-				}
-			}
-		?>
-	</tfoot>
-</table>
-
-<?php do_action( 'woocommerce_email_after_order_table', $order, $sent_to_admin, $plain_text ); ?>
-
-<?php do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text ); ?>
-
-<?php do_action( 'woocommerce_email_footer' ); ?>
+echo apply_filters( 'woocommerce_email_footer_text', get_option( 'woocommerce_email_footer_text' ) );

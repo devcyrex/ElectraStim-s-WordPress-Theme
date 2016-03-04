@@ -2,26 +2,25 @@
 /**
  * Customer Reset Password email
  *
- * @author 		WooThemes
- * @package 	WooCommerce/Templates/Emails
- * @version     2.0.0
+ * @author  WooThemes
+ * @package WooCommerce/Templates/Emails/Plain
+ * @version 2.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-?>
+echo "= " . $email_heading . " =\n\n";
 
-<?php do_action( 'woocommerce_email_header', $email_heading ); ?>
+echo __( 'Someone requested that the password be reset for the following account:', 'woocommerce' ) . "\r\n\r\n";
+echo esc_url( network_home_url( '/' ) ) . "\r\n\r\n";
+echo sprintf( __( 'Username: %s', 'woocommerce' ), $user_login ) . "\r\n\r\n";
+echo __( 'If this was a mistake, just ignore this email and nothing will happen.', 'woocommerce' ) . "\r\n\r\n";
+echo __( 'To reset your password, visit the following address:', 'woocommerce' ) . "\r\n\r\n";
 
-<p><?php _e( 'Someone requested that the password be reset for the following account:', 'woocommerce' ); ?></p>
-<p><?php printf( __( 'Username: %s', 'woocommerce' ), $user_login ); ?></p>
-<p><?php _e( 'If this was a mistake, just ignore this email and nothing will happen.', 'woocommerce' ); ?></p>
-<p><?php _e( 'To reset your password, visit the following address:', 'woocommerce' ); ?></p>
-<p>
-    <a class="link" href="<?php echo esc_url( add_query_arg( array( 'key' => $reset_key, 'login' => rawurlencode( $user_login ) ), wc_get_endpoint_url( 'lost-password', '', wc_get_page_permalink( 'myaccount' ) ) ) ); ?>">
-			<?php _e( 'Click here to reset your password', 'woocommerce' ); ?></a>
-</p>
+echo esc_url( add_query_arg( array( 'key' => $reset_key, 'login' => $user_login ), wc_get_endpoint_url( 'lost-password', '', wc_get_page_permalink( 'myaccount' ) ) ) ) . "\r\n";
 
-<?php do_action( 'woocommerce_email_footer' ); ?>
+echo "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
+
+echo apply_filters( 'woocommerce_email_footer_text', get_option( 'woocommerce_email_footer_text' ) );

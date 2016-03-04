@@ -1,73 +1,45 @@
 <?php
 /**
- * Customer completed order email
+ * Customer completed order email (plain text)
  *
- * @author 		WooThemes
- * @package 	WooCommerce/Templates/Emails
- * @version     2.4.0
+ * @author		WooThemes
+ * @package		WooCommerce/Templates/Emails/Plain
+ * @version		2.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-require_once("functions.php");
+echo "= " . $email_heading . " =\n\n";
 
-?>
+echo sprintf( __( "Hi there. Your recent order on %s has been completed. Your order details are shown below for your reference:", 'woocommerce' ), get_option( 'blogname' ) ) . "\n\n";
 
-<?php do_action( 'woocommerce_email_header', $email_heading ); ?>
+echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 
-<p><?php printf( __( "Hi there. Your recent order with Cyrex ltd has been completed. Your order details are shown below for your reference:", 'woocommerce' ), get_option( 'blogname' ) ); ?></p>
+do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text );
 
-<?php do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text ); ?>
+echo strtoupper( sprintf( __( 'Order number: %s', 'woocommerce' ), $order->get_order_number() ) ) . "\n";
+echo date_i18n( __( 'jS F Y', 'woocommerce' ), strtotime( $order->order_date ) ) . "\n";
 
-<h2><?php printf( __( 'Order #%s', 'woocommerce' ), $order->get_order_number() ); ?></h2>
+do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text );
 
-<table class="td" cellspacing="0" cellpadding="6" style="width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;" border="1">
-	<thead>
-		<tr>
-			<th class="td" scope="col" style="text-align:left;"><?php _e( 'Product', 'woocommerce' ); ?></th>
-			<th class="td" scope="col" style="text-align:left;"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
-			<th class="td" scope="col" style="text-align:left;"><?php _e( 'Price', 'woocommerce' ); ?></th>
-		</tr>
-	</thead>
-	<tbody>
-		<?php echo $order->email_order_items_table( true, false, true ); ?>
-	</tbody>
-	<tfoot>
-		<?php
+echo "\n" . $order->email_order_items_table( true, false, true, '', '', true );
 
-			if ( $totals = $order->get_order_item_totals() ) {
+echo "==========\n\n";
 
-				$i = 0;
-				foreach ( $totals as $total ) {
+if ( $totals = $order->get_order_item_totals() ) {
+	foreach ( $totals as $total ) {
+		echo $total['label'] . "\t " . $total['value'] . "\n";
+	}
+}
 
-					if($total['label'] === "Total:"){
+echo "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 
-						$country = get_post_meta($order->id,'_billing_country',true);
+do_action( 'woocommerce_email_after_order_table', $order, $sent_to_admin, $plain_text );
 
-						$total['value'] = format_price(remove_vat($total["label"], $total['value'], $order), $country);
+do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text );
 
-					}else if($total['label'] === "Shipping:"){
+echo "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 
-						$shipping_details = $total['value'];
-					}
-
-					$i++;
-					?><tr>
-						<th class="td" scope="row" colspan="2" style="text-align:left; <?php if ( $i == 1 ) echo 'border-top-width: 4px;'; ?>"><?php echo $total['label']; ?></th>
-						<td class="td" style="text-align:left; <?php if ( $i == 1 ) echo 'border-top-width: 4px;'; ?>"><?php echo $total['value']; ?></td>
-					</tr><?php
-				}
-			}
-		?>
-	</tfoot>
-</table>
-
-<?php do_action( 'woocommerce_email_after_order_table', $order, $sent_to_admin, $plain_text ); ?>
-
-<?php do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text ); ?>
-
-<?php do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text ); ?>
-
-<?php do_action( 'woocommerce_email_footer' ); ?>
+echo apply_filters( 'woocommerce_email_footer_text', get_option( 'woocommerce_email_footer_text' ) );

@@ -1,9 +1,9 @@
 <?php
 /**
- * Customer refunded order email
+ * Customer refunded order email (plain text)
  *
  * @author   WooThemes
- * @package  WooCommerce/Templates/Emails
+ * @package  WooCommerce/Templates/Emails/Plain
  * @version  2.4.0
  */
 
@@ -11,64 +11,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-?>
+echo "= " . $email_heading . " =\n\n";
 
-<?php do_action( 'woocommerce_email_header', $email_heading ); ?>
+echo sprintf( __( "Hi there. Your order on %s has been refunded. Your order details are shown below for your reference:", 'woocommerce' ), get_option( 'blogname' ) ) . "\n\n";
 
-<p><?php
-	if ( $partial_refund ) {
-		printf( __( "Hi there. Your order with Cyrex ltd has been partially refunded.", 'woocommerce' ), get_option( 'blogname' ) );
+echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
+
+do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text );
+
+echo strtoupper( sprintf( __( 'Order number: %s', 'woocommerce' ), $order->get_order_number() ) ) . "\n";
+echo date_i18n( __( 'jS F Y', 'woocommerce' ), strtotime( $order->order_date ) ) . "\n";
+
+do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text );
+
+echo "\n" . $order->email_order_items_table( true, false, true, '', '', true );
+
+echo "==========\n\n";
+
+if ( $refund && $refund->get_refund_amount() > 0 ) {
+	echo __( 'Amount Refunded', 'woocommerce' ) . "\t " . $refund->get_formatted_refund_amount() . "\n";
+}
+
+if ( $totals = $order->get_order_item_totals() ) {
+	foreach ( $totals as $total ) {
+		echo $total['label'] . "\t " . $total['value'] . "\n";
 	}
-	else {
-		printf( __( "Hi there. Your order with Cyrex ltd has been refunded.", 'woocommerce' ), get_option( 'blogname' ) );
-	}
-?></p>
+}
 
-<?php do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text ); ?>
+echo "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 
-<h2><?php printf( __( 'Order #%s', 'woocommerce' ), $order->get_order_number() ); ?></h2>
+do_action( 'woocommerce_email_after_order_table', $order, $sent_to_admin, $plain_text );
 
-<table class="td" cellspacing="0" cellpadding="6" style="width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;" border="1">
-	<thead>
-		<tr>
-			<th class="td" scope="col" style="text-align:left;"><?php _e( 'Product', 'woocommerce' ); ?></th>
-			<th class="td" scope="col" style="text-align:left;"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
-			<th class="td" scope="col" style="text-align:left;"><?php _e( 'Price', 'woocommerce' ); ?></th>
-		</tr>
-	</thead>
-	<tbody>
-		<?php echo $order->email_order_items_table( true, false, true ); ?>
-	</tbody>
-	<tfoot>
-		<?php
-			if ( $totals = $order->get_order_item_totals() ) {
+do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text );
 
-				$i = 0;
+echo "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 
-				if ( $refund && $refund->get_refund_amount() > 0 ) {
-					?><tr>
-						<th scope="row" colspan="2" style="text-align:left; border: 1px solid #eee;border-top-width: 4px;"><?php _e( 'Amount Refunded', 'woocommerce' ); ?>:</th>
-						<td style="text-align:left; border: 1px solid #eee;border-top-width: 4px;"><?php echo $refund->get_formatted_refund_amount(); ?></td>
-					</tr><?php
-					$i++;
-				}
-
-				foreach ( $totals as $total ) {
-					$i++;
-					?><tr>
-						<th class="td" scope="row" colspan="2" style="text-align:left; <?php if ( $i == 1 ) echo 'border-top-width: 4px;'; ?>"><?php echo $total['label']; ?></th>
-						<td class="td" style="text-align:left; <?php if ( $i == 1 ) echo 'border-top-width: 4px;'; ?>"><?php echo $total['value']; ?></td>
-					</tr><?php
-				}
-			}
-		?>
-	</tfoot>
-</table>
-
-<?php do_action( 'woocommerce_email_after_order_table', $order, $sent_to_admin, $plain_text ); ?>
-
-<?php do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text ); ?>
-
-<?php do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text ); ?>
-
-<?php do_action( 'woocommerce_email_footer' ); ?>
+echo apply_filters( 'woocommerce_email_footer_text', get_option( 'woocommerce_email_footer_text' ) );

@@ -3,71 +3,51 @@
  * Customer note email
  *
  * @author 		WooThemes
- * @package 	WooCommerce/Templates/Emails
- * @version     2.4.0
+ * @package 	WooCommerce/Templates/Emails/Plain
+ * @version     2.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-?>
+echo "= " . $email_heading . " =\n\n";
 
-<?php do_action( 'woocommerce_email_header', $email_heading ); ?>
+echo __( "Hello, a note has just been added to your order:", 'woocommerce' ) . "\n\n";
 
-<p><?php _e( "Hello, a note has just been added to your order:", 'woocommerce' ); ?></p>
+echo "----------\n\n";
 
-<blockquote><?php echo wpautop( wptexturize( $customer_note ) ) ?></blockquote>
+echo wptexturize( $customer_note ) . "\n\n";
 
-<p><?php _e( "For your reference, your order details are shown below.", 'woocommerce' ); ?></p>
+echo "----------\n\n";
 
-<?php do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text ); ?>
+echo __( "For your reference, your order details are shown below.", 'woocommerce' ) . "\n\n";
 
-<h2><?php printf( __( 'Order #%s', 'woocommerce' ), $order->get_order_number() ); ?></h2>
+echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 
-<table class="td" cellspacing="0" cellpadding="6" style="width: 100%; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;" border="1">
-	<thead>
-		<tr>
-			<th class="td" scope="col" style="text-align:left;"><?php _e( 'Product', 'woocommerce' ); ?></th>
-			<th class="td" scope="col" style="text-align:left;"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
-			<th class="td" scope="col" style="text-align:left;"><?php _e( 'Price', 'woocommerce' ); ?></th>
-		</tr>
-	</thead>
-	<tbody>
-		<?php echo $order->email_order_items_table( $order->is_download_permitted(), true ); ?>
-	</tbody>
-	<tfoot>
-		<?php
-			if ( $totals = $order->get_order_item_totals() ) {
+do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text );
 
-				$i = 0;
-				foreach ( $totals as $total ) {
-					if($total['label'] === "Total:"){
+echo strtoupper( sprintf( __( 'Order number: %s', 'woocommerce' ), $order->get_order_number() ) ) . "\n";
+echo date_i18n( __( 'jS F Y', 'woocommerce' ), strtotime( $order->order_date ) ) . "\n";
 
-						$country = get_post_meta($order->id,'_billing_country',true);
+do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text );
 
-						$total['value'] = format_price(remove_vat($total["label"], $total['value'], $order), $country);
-						
-					}else if($total['label'] === "Shipping:"){
+echo "\n" . $order->email_order_items_table( $order->is_download_permitted(), true, '', '', '', true );
 
-						$shipping_details = $total['value'];
-					}
+echo "==========\n\n";
 
-					$i++;
-					?><tr>
-						<td class="td" colspan="2" style="text-align:left; <?php if ( $i == 1 ) echo 'border-top-width: 4px !important;'; ?>"><?php echo $total['label']; ?></td>
-						<td class="td" style="text-align:left; <?php if ( $i == 1 ) echo 'border-top-width: 4px !important;'; ?>"><?php echo $total['value']; ?></td>
-					</tr><?php
-				}
-			}
-		?>
-	</tfoot>
-</table>
+if ( $totals = $order->get_order_item_totals() ) {
+	foreach ( $totals as $total ) {
+		echo $total['label'] . "\t " . $total['value'] . "\n";
+	}
+}
 
-<?php do_action( 'woocommerce_email_after_order_table', $order, $sent_to_admin, $plain_text ); ?>
+echo "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 
-<?php do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text ); ?>
+do_action( 'woocommerce_email_after_order_table', $order, $sent_to_admin, $plain_text );
 
-<?php do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text ); ?>
+do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text );
 
-<?php do_action( 'woocommerce_email_footer' ); ?>
+echo "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
+
+echo apply_filters( 'woocommerce_email_footer_text', get_option( 'woocommerce_email_footer_text' ) );

@@ -2,14 +2,74 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19115",
 "files": {
-	"\/ie.scss": {
+	"\/coffee\/main.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/coffee\/main.coffee",
+		"minifyOutput": 1,
+		"outputAbbreviatedPath": "\/coffee\/main.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"\/css\/desktop.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/desktop.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/home.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/home.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/mobile.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/mobile.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/screen.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/screen.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/js\/main.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/main.js",
+		"outputAbbreviatedPath": "\/js\/min\/main-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/sass\/ie.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/ie.scss",
+		"inputAbbreviatedPath": "\/sass\/ie.scss",
 		"outputAbbreviatedPath": "\/css\/ie.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -18,15 +78,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/modules\/_base.scss": {
+	"\/sass\/modules\/_base.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/modules\/_base.scss",
-		"outputAbbreviatedPath": "\/css\/_base 2.css",
+		"inputAbbreviatedPath": "\/sass\/modules\/_base.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_base.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -34,15 +94,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/modules\/all.scss": {
+	"\/sass\/modules\/all.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/modules\/all.scss",
-		"outputAbbreviatedPath": "\/css\/all.css",
+		"inputAbbreviatedPath": "\/sass\/modules\/all.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/all.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -50,15 +110,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/modules\/colours\/_colour.scss": {
+	"\/sass\/modules\/colours\/_colour.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/modules\/colours\/_colour.scss",
-		"outputAbbreviatedPath": "\/modules\/css\/_colour.css",
+		"inputAbbreviatedPath": "\/sass\/modules\/colours\/_colour.scss",
+		"outputAbbreviatedPath": "\/sass\/modules\/css\/_colour.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -66,15 +126,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/modules\/colours\/all.scss": {
+	"\/sass\/modules\/colours\/all.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/modules\/colours\/all.scss",
-		"outputAbbreviatedPath": "\/modules\/css\/all.css",
+		"inputAbbreviatedPath": "\/sass\/modules\/colours\/all.scss",
+		"outputAbbreviatedPath": "\/sass\/modules\/css\/all.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -82,15 +142,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/modules\/mixins\/_mixins.scss": {
+	"\/sass\/modules\/mixins\/_mixins.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/modules\/mixins\/_mixins.scss",
-		"outputAbbreviatedPath": "\/modules\/css\/_mixins.css",
+		"inputAbbreviatedPath": "\/sass\/modules\/mixins\/_mixins.scss",
+		"outputAbbreviatedPath": "\/sass\/modules\/css\/_mixins.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -98,15 +158,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/modules\/mixins\/all.scss": {
+	"\/sass\/modules\/mixins\/all.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/modules\/mixins\/all.scss",
-		"outputAbbreviatedPath": "\/modules\/css\/all.css",
+		"inputAbbreviatedPath": "\/sass\/modules\/mixins\/all.scss",
+		"outputAbbreviatedPath": "\/sass\/modules\/css\/all.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -114,15 +174,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/actions\/_hover_zoom.scss": {
+	"\/sass\/partials\/actions\/_hover_zoom.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/actions\/_hover_zoom.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_hover_zoom.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/actions\/_hover_zoom.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_hover_zoom.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -130,15 +190,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/actions\/_news_widget.scss": {
+	"\/sass\/partials\/actions\/_news_widget.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/actions\/_news_widget.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_news_widget.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/actions\/_news_widget.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_news_widget.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -146,15 +206,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/actions\/_silder.scss": {
+	"\/sass\/partials\/actions\/_silder.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/actions\/_silder.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_silder.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/actions\/_silder.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_silder.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -162,15 +222,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/actions\/all.scss": {
+	"\/sass\/partials\/actions\/all.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/actions\/all.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/all.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/actions\/all.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/all.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -178,15 +238,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/all.scss": {
+	"\/sass\/partials\/all.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/all.scss",
-		"outputAbbreviatedPath": "\/css\/all.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/all.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/all.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -194,15 +254,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/buttons_and_forms\/_button.scss": {
+	"\/sass\/partials\/buttons_and_forms\/_button.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/buttons_and_forms\/_button.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_button.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/buttons_and_forms\/_button.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_button.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -210,15 +270,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/buttons_and_forms\/_contact_form.scss": {
+	"\/sass\/partials\/buttons_and_forms\/_contact_form.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/buttons_and_forms\/_contact_form.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_contact_form.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/buttons_and_forms\/_contact_form.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_contact_form.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -226,15 +286,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/buttons_and_forms\/_quick_links.scss": {
+	"\/sass\/partials\/buttons_and_forms\/_quick_links.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/buttons_and_forms\/_quick_links.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_quick_links.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/buttons_and_forms\/_quick_links.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_quick_links.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -242,15 +302,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/buttons_and_forms\/_social_login.scss": {
+	"\/sass\/partials\/buttons_and_forms\/_social_login.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/buttons_and_forms\/_social_login.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_social_login.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/buttons_and_forms\/_social_login.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_social_login.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -258,15 +318,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/buttons_and_forms\/all.scss": {
+	"\/sass\/partials\/buttons_and_forms\/all.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/buttons_and_forms\/all.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/all.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/buttons_and_forms\/all.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/all.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -274,15 +334,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/desktop\/_footer.scss": {
+	"\/sass\/partials\/desktop\/_footer.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/desktop\/_footer.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_footer.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/desktop\/_footer.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_footer.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -290,15 +350,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/desktop\/_header.scss": {
+	"\/sass\/partials\/desktop\/_header.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/desktop\/_header.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_header.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/desktop\/_header.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_header.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -306,15 +366,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/desktop\/all.scss": {
+	"\/sass\/partials\/desktop\/all.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/desktop\/all.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/all.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/desktop\/all.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/all.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -322,15 +382,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/moblie\/_footer.scss": {
+	"\/sass\/partials\/moblie\/_footer.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/moblie\/_footer.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_footer.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/moblie\/_footer.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_footer.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -338,15 +398,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/moblie\/_header.scss": {
+	"\/sass\/partials\/moblie\/_header.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/moblie\/_header.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_header.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/moblie\/_header.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_header.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -354,15 +414,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/page\/_advice_guide.scss": {
+	"\/sass\/partials\/page\/_advice_guide.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/page\/_advice_guide.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_advice_guide.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/page\/_advice_guide.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_advice_guide.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -370,15 +430,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/page\/_body.scss": {
+	"\/sass\/partials\/page\/_body.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/page\/_body.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_body.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/page\/_body.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_body.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -386,15 +446,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/page\/_edit_account.scss": {
+	"\/sass\/partials\/page\/_edit_account.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/page\/_edit_account.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_edit_account.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/page\/_edit_account.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_edit_account.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -402,15 +462,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/page\/_page.scss": {
+	"\/sass\/partials\/page\/_page.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/page\/_page.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_page.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/page\/_page.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_page.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -418,15 +478,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/theme.scss": {
+	"\/sass\/partials\/theme.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/theme.scss",
-		"outputAbbreviatedPath": "\/css\/theme.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/theme.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/theme.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -434,15 +494,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/tools\/_utility.scss": {
+	"\/sass\/partials\/tools\/_utility.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/tools\/_utility.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_utility.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/tools\/_utility.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_utility.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -450,15 +510,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/woocommerce\/_cart.scss": {
+	"\/sass\/partials\/woocommerce\/_cart.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/woocommerce\/_cart.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_cart.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/woocommerce\/_cart.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_cart.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -466,15 +526,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/woocommerce\/_wishlist.scss": {
+	"\/sass\/partials\/woocommerce\/_wishlist.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/woocommerce\/_wishlist.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_wishlist.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/woocommerce\/_wishlist.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_wishlist.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -482,15 +542,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/woocommerce\/_woocommerce.scss": {
+	"\/sass\/partials\/woocommerce\/_woocommerce.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/woocommerce\/_woocommerce.scss",
-		"outputAbbreviatedPath": "\/partials\/css\/_woocommerce.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/woocommerce\/_woocommerce.scss",
+		"outputAbbreviatedPath": "\/sass\/partials\/css\/_woocommerce.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -498,14 +558,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/print.scss": {
+	"\/sass\/print.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/print.scss",
+		"inputAbbreviatedPath": "\/sass\/print.scss",
 		"outputAbbreviatedPath": "\/css\/print.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -514,14 +574,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/screen.scss": {
+	"\/sass\/screen.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/screen.scss",
+		"inputAbbreviatedPath": "\/sass\/screen.scss",
 		"outputAbbreviatedPath": "\/css\/screen.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -530,15 +590,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/all.scss": {
+	"\/sass\/vendor\/all.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/all.scss",
-		"outputAbbreviatedPath": "\/css\/all.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/all.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/all.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -546,15 +606,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/_main.scss": {
+	"\/sass\/vendor\/companimation\/_main.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/_main.scss",
-		"outputAbbreviatedPath": "\/vendor\/css\/_main.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/_main.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/css\/_main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -562,15 +622,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/_preset.scss": {
+	"\/sass\/vendor\/companimation\/_preset.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/_preset.scss",
-		"outputAbbreviatedPath": "\/vendor\/css\/_preset.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/_preset.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/css\/_preset.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -578,15 +638,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/_bounce.scss": {
+	"\/sass\/vendor\/companimation\/preset\/_bounce.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/_bounce.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/css\/_bounce.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/_bounce.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/css\/_bounce.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -594,15 +654,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/_fade.scss": {
+	"\/sass\/vendor\/companimation\/preset\/_fade.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/_fade.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/css\/_fade.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/_fade.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/css\/_fade.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -610,15 +670,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/_filters.scss": {
+	"\/sass\/vendor\/companimation\/preset\/_filters.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/_filters.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/css\/_filters.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/_filters.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/css\/_filters.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -626,15 +686,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/_flip.scss": {
+	"\/sass\/vendor\/companimation\/preset\/_flip.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/_flip.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/css\/_flip.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/_flip.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/css\/_flip.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -642,15 +702,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/_roll.scss": {
+	"\/sass\/vendor\/companimation\/preset\/_roll.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/_roll.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/css\/_roll.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/_roll.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/css\/_roll.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -658,15 +718,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/_rotate.scss": {
+	"\/sass\/vendor\/companimation\/preset\/_rotate.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/_rotate.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/css\/_rotate.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/_rotate.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/css\/_rotate.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -674,15 +734,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/_special.scss": {
+	"\/sass\/vendor\/companimation\/preset\/_special.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/_special.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/css\/_special.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/_special.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/css\/_special.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -690,15 +750,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/bounce\/_bounce.scss": {
+	"\/sass\/vendor\/companimation\/preset\/bounce\/_bounce.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/bounce\/_bounce.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_bounce.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/bounce\/_bounce.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_bounce.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -706,15 +766,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/bounce\/_bounceIn.scss": {
+	"\/sass\/vendor\/companimation\/preset\/bounce\/_bounceIn.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/bounce\/_bounceIn.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_bounceIn.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/bounce\/_bounceIn.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_bounceIn.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -722,15 +782,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/bounce\/_bounceInDown.scss": {
+	"\/sass\/vendor\/companimation\/preset\/bounce\/_bounceInDown.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/bounce\/_bounceInDown.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_bounceInDown.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/bounce\/_bounceInDown.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_bounceInDown.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -738,15 +798,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/bounce\/_bounceInLeft.scss": {
+	"\/sass\/vendor\/companimation\/preset\/bounce\/_bounceInLeft.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/bounce\/_bounceInLeft.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_bounceInLeft.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/bounce\/_bounceInLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_bounceInLeft.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -754,15 +814,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/bounce\/_bounceInRight.scss": {
+	"\/sass\/vendor\/companimation\/preset\/bounce\/_bounceInRight.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/bounce\/_bounceInRight.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_bounceInRight.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/bounce\/_bounceInRight.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_bounceInRight.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -770,15 +830,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/bounce\/_bounceInUp.scss": {
+	"\/sass\/vendor\/companimation\/preset\/bounce\/_bounceInUp.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/bounce\/_bounceInUp.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_bounceInUp.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/bounce\/_bounceInUp.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_bounceInUp.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -786,15 +846,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/bounce\/_bounceOut.scss": {
+	"\/sass\/vendor\/companimation\/preset\/bounce\/_bounceOut.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/bounce\/_bounceOut.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_bounceOut.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/bounce\/_bounceOut.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_bounceOut.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -802,15 +862,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/bounce\/_bounceOutDown.scss": {
+	"\/sass\/vendor\/companimation\/preset\/bounce\/_bounceOutDown.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/bounce\/_bounceOutDown.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_bounceOutDown.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/bounce\/_bounceOutDown.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_bounceOutDown.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -818,15 +878,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/bounce\/_bounceOutLeft.scss": {
+	"\/sass\/vendor\/companimation\/preset\/bounce\/_bounceOutLeft.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/bounce\/_bounceOutLeft.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_bounceOutLeft.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/bounce\/_bounceOutLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_bounceOutLeft.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -834,15 +894,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/bounce\/_bounceOutRight.scss": {
+	"\/sass\/vendor\/companimation\/preset\/bounce\/_bounceOutRight.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/bounce\/_bounceOutRight.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_bounceOutRight.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/bounce\/_bounceOutRight.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_bounceOutRight.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -850,15 +910,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/bounce\/_bounceOutUp.scss": {
+	"\/sass\/vendor\/companimation\/preset\/bounce\/_bounceOutUp.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/bounce\/_bounceOutUp.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_bounceOutUp.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/bounce\/_bounceOutUp.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_bounceOutUp.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -866,15 +926,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeIn.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeIn.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeIn.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeIn.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeIn.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeIn.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -882,15 +942,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeInDown.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeInDown.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeInDown.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeInDown.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeInDown.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeInDown.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -898,15 +958,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeInDownBig.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeInDownBig.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeInDownBig.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeInDownBig.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeInDownBig.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeInDownBig.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -914,15 +974,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeInLeft.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeInLeft.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeInLeft.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeInLeft.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeInLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeInLeft.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -930,15 +990,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeInLeftBig.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeInLeftBig.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeInLeftBig.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeInLeftBig.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeInLeftBig.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeInLeftBig.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -946,15 +1006,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeInRight.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeInRight.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeInRight.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeInRight.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeInRight.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeInRight.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -962,15 +1022,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeInRightBig.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeInRightBig.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeInRightBig.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeInRightBig.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeInRightBig.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeInRightBig.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -978,15 +1038,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeInUp.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeInUp.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeInUp.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeInUp.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeInUp.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeInUp.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -994,15 +1054,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeInUpBig.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeInUpBig.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeInUpBig.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeInUpBig.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeInUpBig.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeInUpBig.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1010,15 +1070,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeOut.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeOut.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeOut.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeOut.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeOut.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeOut.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1026,15 +1086,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeOutDown.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutDown.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeOutDown.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeOutDown.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutDown.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeOutDown.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1042,15 +1102,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeOutDownBig.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutDownBig.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeOutDownBig.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeOutDownBig.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutDownBig.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeOutDownBig.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1058,15 +1118,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeOutLeft.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutLeft.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeOutLeft.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeOutLeft.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeOutLeft.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1074,15 +1134,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeOutLeftBig.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutLeftBig.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeOutLeftBig.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeOutLeftBig.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutLeftBig.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeOutLeftBig.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1090,15 +1150,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeOutRight.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutRight.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeOutRight.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeOutRight.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutRight.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeOutRight.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1106,15 +1166,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeOutRightBig.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutRightBig.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeOutRightBig.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeOutRightBig.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutRightBig.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeOutRightBig.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1122,15 +1182,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeOutUp.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutUp.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeOutUp.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeOutUp.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutUp.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeOutUp.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1138,15 +1198,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/fade\/_fadeOutUpBig.scss": {
+	"\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutUpBig.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/fade\/_fadeOutUpBig.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_fadeOutUpBig.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/fade\/_fadeOutUpBig.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_fadeOutUpBig.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1154,15 +1214,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/filters\/_blurIn.scss": {
+	"\/sass\/vendor\/companimation\/preset\/filters\/_blurIn.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/filters\/_blurIn.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_blurIn.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/filters\/_blurIn.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_blurIn.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1170,15 +1230,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/filters\/_blurInDown.scss": {
+	"\/sass\/vendor\/companimation\/preset\/filters\/_blurInDown.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/filters\/_blurInDown.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_blurInDown.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/filters\/_blurInDown.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_blurInDown.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1186,15 +1246,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/filters\/_blurInLeft.scss": {
+	"\/sass\/vendor\/companimation\/preset\/filters\/_blurInLeft.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/filters\/_blurInLeft.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_blurInLeft.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/filters\/_blurInLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_blurInLeft.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1202,15 +1262,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/filters\/_blurInRight.scss": {
+	"\/sass\/vendor\/companimation\/preset\/filters\/_blurInRight.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/filters\/_blurInRight.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_blurInRight.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/filters\/_blurInRight.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_blurInRight.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1218,15 +1278,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/filters\/_blurInUp.scss": {
+	"\/sass\/vendor\/companimation\/preset\/filters\/_blurInUp.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/filters\/_blurInUp.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_blurInUp.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/filters\/_blurInUp.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_blurInUp.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1234,15 +1294,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/filters\/_blurOut.scss": {
+	"\/sass\/vendor\/companimation\/preset\/filters\/_blurOut.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/filters\/_blurOut.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_blurOut.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/filters\/_blurOut.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_blurOut.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1250,15 +1310,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/filters\/_blurOutDown.scss": {
+	"\/sass\/vendor\/companimation\/preset\/filters\/_blurOutDown.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/filters\/_blurOutDown.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_blurOutDown.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/filters\/_blurOutDown.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_blurOutDown.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1266,15 +1326,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/filters\/_blurOutLeft.scss": {
+	"\/sass\/vendor\/companimation\/preset\/filters\/_blurOutLeft.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/filters\/_blurOutLeft.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_blurOutLeft.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/filters\/_blurOutLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_blurOutLeft.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1282,15 +1342,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/filters\/_blurOutRight.scss": {
+	"\/sass\/vendor\/companimation\/preset\/filters\/_blurOutRight.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/filters\/_blurOutRight.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_blurOutRight.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/filters\/_blurOutRight.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_blurOutRight.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1298,15 +1358,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/filters\/_blurOutUp.scss": {
+	"\/sass\/vendor\/companimation\/preset\/filters\/_blurOutUp.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/filters\/_blurOutUp.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_blurOutUp.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/filters\/_blurOutUp.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_blurOutUp.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1314,15 +1374,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/filters\/_grayscaleIn.scss": {
+	"\/sass\/vendor\/companimation\/preset\/filters\/_grayscaleIn.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/filters\/_grayscaleIn.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_grayscaleIn.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/filters\/_grayscaleIn.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_grayscaleIn.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1330,15 +1390,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/filters\/_grayscaleOut.scss": {
+	"\/sass\/vendor\/companimation\/preset\/filters\/_grayscaleOut.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/filters\/_grayscaleOut.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_grayscaleOut.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/filters\/_grayscaleOut.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_grayscaleOut.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1346,15 +1406,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/flip\/_flip.scss": {
+	"\/sass\/vendor\/companimation\/preset\/flip\/_flip.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/flip\/_flip.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_flip.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/flip\/_flip.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_flip.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1362,15 +1422,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/flip\/_flipInX.scss": {
+	"\/sass\/vendor\/companimation\/preset\/flip\/_flipInX.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/flip\/_flipInX.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_flipInX.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/flip\/_flipInX.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_flipInX.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1378,15 +1438,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/flip\/_flipInY.scss": {
+	"\/sass\/vendor\/companimation\/preset\/flip\/_flipInY.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/flip\/_flipInY.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_flipInY.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/flip\/_flipInY.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_flipInY.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1394,15 +1454,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/flip\/_flipOutX.scss": {
+	"\/sass\/vendor\/companimation\/preset\/flip\/_flipOutX.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/flip\/_flipOutX.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_flipOutX.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/flip\/_flipOutX.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_flipOutX.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1410,15 +1470,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/flip\/_flipOutY.scss": {
+	"\/sass\/vendor\/companimation\/preset\/flip\/_flipOutY.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/flip\/_flipOutY.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_flipOutY.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/flip\/_flipOutY.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_flipOutY.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1426,15 +1486,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/roll\/_rollIn.scss": {
+	"\/sass\/vendor\/companimation\/preset\/roll\/_rollIn.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/roll\/_rollIn.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_rollIn.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/roll\/_rollIn.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_rollIn.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1442,15 +1502,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/roll\/_rollOut.scss": {
+	"\/sass\/vendor\/companimation\/preset\/roll\/_rollOut.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/roll\/_rollOut.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_rollOut.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/roll\/_rollOut.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_rollOut.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1458,15 +1518,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/rotate\/_rotateIn.scss": {
+	"\/sass\/vendor\/companimation\/preset\/rotate\/_rotateIn.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/rotate\/_rotateIn.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_rotateIn.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/rotate\/_rotateIn.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_rotateIn.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1474,15 +1534,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/rotate\/_rotateInDownLeft.scss": {
+	"\/sass\/vendor\/companimation\/preset\/rotate\/_rotateInDownLeft.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/rotate\/_rotateInDownLeft.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_rotateInDownLeft.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/rotate\/_rotateInDownLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_rotateInDownLeft.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1490,15 +1550,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/rotate\/_rotateInDownRight.scss": {
+	"\/sass\/vendor\/companimation\/preset\/rotate\/_rotateInDownRight.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/rotate\/_rotateInDownRight.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_rotateInDownRight.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/rotate\/_rotateInDownRight.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_rotateInDownRight.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1506,15 +1566,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/rotate\/_rotateInUpLeft.scss": {
+	"\/sass\/vendor\/companimation\/preset\/rotate\/_rotateInUpLeft.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/rotate\/_rotateInUpLeft.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_rotateInUpLeft.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/rotate\/_rotateInUpLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_rotateInUpLeft.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1522,15 +1582,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/rotate\/_rotateInUpRight.scss": {
+	"\/sass\/vendor\/companimation\/preset\/rotate\/_rotateInUpRight.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/rotate\/_rotateInUpRight.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_rotateInUpRight.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/rotate\/_rotateInUpRight.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_rotateInUpRight.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1538,15 +1598,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/rotate\/_rotateOut.scss": {
+	"\/sass\/vendor\/companimation\/preset\/rotate\/_rotateOut.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/rotate\/_rotateOut.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_rotateOut.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/rotate\/_rotateOut.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_rotateOut.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1554,15 +1614,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/rotate\/_rotateOutDownLeft.scss": {
+	"\/sass\/vendor\/companimation\/preset\/rotate\/_rotateOutDownLeft.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/rotate\/_rotateOutDownLeft.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_rotateOutDownLeft.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/rotate\/_rotateOutDownLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_rotateOutDownLeft.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1570,15 +1630,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/rotate\/_rotateOutDownRight.scss": {
+	"\/sass\/vendor\/companimation\/preset\/rotate\/_rotateOutDownRight.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/rotate\/_rotateOutDownRight.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_rotateOutDownRight.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/rotate\/_rotateOutDownRight.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_rotateOutDownRight.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1586,15 +1646,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/rotate\/_rotateOutUpLeft.scss": {
+	"\/sass\/vendor\/companimation\/preset\/rotate\/_rotateOutUpLeft.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/rotate\/_rotateOutUpLeft.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_rotateOutUpLeft.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/rotate\/_rotateOutUpLeft.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_rotateOutUpLeft.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1602,15 +1662,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/rotate\/_rotateOutUpRight.scss": {
+	"\/sass\/vendor\/companimation\/preset\/rotate\/_rotateOutUpRight.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/rotate\/_rotateOutUpRight.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_rotateOutUpRight.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/rotate\/_rotateOutUpRight.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_rotateOutUpRight.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1618,15 +1678,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/special\/_flash.scss": {
+	"\/sass\/vendor\/companimation\/preset\/special\/_flash.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/special\/_flash.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_flash.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/special\/_flash.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_flash.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1634,15 +1694,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/special\/_hinge.scss": {
+	"\/sass\/vendor\/companimation\/preset\/special\/_hinge.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/special\/_hinge.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_hinge.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/special\/_hinge.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_hinge.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1650,15 +1710,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/special\/_lightSpeedIn.scss": {
+	"\/sass\/vendor\/companimation\/preset\/special\/_lightSpeedIn.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/special\/_lightSpeedIn.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_lightSpeedIn.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/special\/_lightSpeedIn.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_lightSpeedIn.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1666,15 +1726,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/special\/_lightSpeedOut.scss": {
+	"\/sass\/vendor\/companimation\/preset\/special\/_lightSpeedOut.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/special\/_lightSpeedOut.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_lightSpeedOut.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/special\/_lightSpeedOut.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_lightSpeedOut.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1682,15 +1742,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/special\/_pulse.scss": {
+	"\/sass\/vendor\/companimation\/preset\/special\/_pulse.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/special\/_pulse.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_pulse.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/special\/_pulse.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_pulse.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1698,15 +1758,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/special\/_shake.scss": {
+	"\/sass\/vendor\/companimation\/preset\/special\/_shake.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/special\/_shake.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_shake.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/special\/_shake.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_shake.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1714,15 +1774,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/special\/_swing.scss": {
+	"\/sass\/vendor\/companimation\/preset\/special\/_swing.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/special\/_swing.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_swing.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/special\/_swing.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_swing.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1730,15 +1790,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/special\/_tada.scss": {
+	"\/sass\/vendor\/companimation\/preset\/special\/_tada.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/special\/_tada.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_tada.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/special\/_tada.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_tada.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1746,15 +1806,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/special\/_wiggle.scss": {
+	"\/sass\/vendor\/companimation\/preset\/special\/_wiggle.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/special\/_wiggle.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_wiggle.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/special\/_wiggle.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_wiggle.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1762,21 +1822,30 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/companimation\/preset\/special\/_wobble.scss": {
+	"\/sass\/vendor\/companimation\/preset\/special\/_wobble.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/companimation\/preset\/special\/_wobble.scss",
-		"outputAbbreviatedPath": "\/vendor\/companimation\/preset\/css\/_wobble.css",
+		"inputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/special\/_wobble.scss",
+		"outputAbbreviatedPath": "\/sass\/vendor\/companimation\/preset\/css\/_wobble.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/screen.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/screen.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
@@ -1786,9 +1855,9 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "sass",
+	"displayValue": "assets",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "compass_darkGray"
+	"iconImageName": "pencil_orange"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,

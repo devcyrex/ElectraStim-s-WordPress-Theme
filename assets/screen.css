@@ -1,0 +1,428 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: bankgothic;
+  src: url("BankGothic-Md-BT-Medium.ttf"); }
+/* utility */
+/*overrides padding and set it to 0px*/
+.no_padding_right {
+  padding-right: 0px; }
+
+.no_padding_left {
+  padding-left: 0px; }
+
+.no_padding_bottom {
+  padding-bottom: 0px; }
+
+.no_padding_top {
+  padding-top: 0px; }
+
+/*overrides the max width and sets it to 100%*/
+.max_width {
+  max-width: 100%; }
+
+::selection {
+  background: #82828B; }
+
+/* utility end */
+/* desktop header */
+header {
+  /*Changes the background colour of the sub menu when the user is hovering over an item*/ }
+  header.site-header {
+    background: #222; }
+  header > .container {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    background-color: #222; }
+  header.site-header.sticky.sticked div.nav > ul > li > a:after, header.site-header.sticky.sticked ul.nav > li > a:after {
+    background-color: #eee; }
+  header.site-header div.nav > ul li ul li.current-menu-ancestor > a, header.site-header div.nav > ul li ul li.current-menu-item > a, header.site-header div.nav > ul li ul li.current_page_ancestor > a, header.site-header div.nav > ul li ul li.current_page_item > a, header.site-header ul.nav li ul li.current-menu-ancestor > a, header.site-header ul.nav li ul li.current-menu-item > a, header.site-header ul.nav li ul li.current_page_ancestor > a, header.site-header ul.nav li ul li.current_page_item > a {
+    background-color: #848484; }
+  header.site-header div.nav > ul > li > a:after, header.site-header ul.nav > li > a:after {
+    background: #eee; }
+  header.site-header ul.nav > li:hover > a {
+    background-color: #545454; }
+  header.site-header div.nav > ul li.sub-visible > a, header.site-header ul.nav li.sub-visible > a {
+    background-color: #545454; }
+  header.site-header div.nav > ul li ul, header.site-header ul.nav li ul {
+    background-color: #545454; }
+  header.site-header div.nav > ul > li > a:hover, header.site-header ul.nav > li > a:hover {
+    color: #eee;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in; }
+  header.site-header div.nav > ul > li, header.site-header ul.nav > li:hover {
+    color: #eee; }
+  .sub-menu > header.site-header div.nav > ul li a:hover, header.site-header ul.nav li a:hover {
+    color: #eee; }
+  .sub-menu > header.site-header div.nav > ul li a:hover, header.site-header ul.nav li a:hover {
+    color: #222; }
+  header.site-header.sticky.sticked div.nav > ul > li > a:after, header.site-header.sticky.sticked ul.nav > li > a:after {
+    background-color: #222; }
+  .sub-menu > header.site-header div.nav > ul li a:hover, header.site-header ul.nav li a:hover {
+    color: #eee;
+    text-decoration: none; }
+  header .header.site-header div.nav > ul li a, header.site-header ul.nav li a:hover {
+    color: #eee; }
+  header.site-header div.nav > ul li ul li:hover > a, header.site-header ul.nav li ul li:hover > a {
+    color: #eee; }
+  header.site-header.sticky.sticked div.nav > ul > li > a:after, header.site-header.sticky.sticked ul.nav > li > a:after {
+    background-color: white; }
+  header.site-header div.nav > ul li ul li:hover > a, header.site-header ul.nav li ul li:hover > a {
+    background-color: rgba(255, 255, 255, 0.2); }
+
+/*gets reid of the bug that makes the nav button show up white when clicked*/
+.nav > li > a:hover, .nav > li > a:focus {
+  background: #222; }
+
+div.nav > ul li a, header.site-header ul.nav li a:selection {
+  color: #fff; }
+
+.header.site-header div.nav > ul li a, header.site-header ul.nav li a {
+  color: #eee; }
+
+.header.site-header.sticky.sticked div.nav > ul > li > a, header.site-header.sticky.sticked ul.nav > li > a {
+  color: #eee; }
+
+/*gets reid of the bug that makes the nav button show up white when clicked*/
+.nav > li > a:hover, .nav > li > a:focus {
+  background: #222; }
+
+.site-header .ubermenu.ubermenu-skin-none .ubermenu-item.ubermenu-item-level-0:hover > .ubermenu-target {
+  background-color: #545454; }
+
+/* desktop header end */
+/* desktop footer */
+.footer-widgets {
+  max-width: 100%;
+  padding-left: 15px; }
+
+footer > .container {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  background-color: #222; }
+
+/* desktop footer end */
+/* moblie header */
+header.mobile-menu .mobile-logo {
+  border-color: #4E4E4F; }
+header.mobile-menu .cart-info a:hover {
+  background-color: #3C3C3C; }
+header.mobile-menu ul.mobile-menu li a:hover {
+  background: #4E4D4D; }
+header.mobile-menu {
+  background-color: #222; }
+header.mobile-menu div.mobile-menu > ul li a, header.mobile-menu ul.mobile-menu li a {
+  background: #222;
+  border-bottom: 1px solid #404040;
+  color: #eee; }
+header.mobile-menu div.mobile-menu > ul li a .sub-menu-indicator, header.mobile-menu ul.mobile-menu li a .sub-menu-indicator {
+  border-left: 1px solid #404040;
+  background: none; }
+header.mobile-menu div.mobile-menu > ul li ul li a, header.mobile-menu ul.mobile-menu li ul li a {
+  background: #353535; }
+header.mobile-menu .cart-info a {
+  border-bottom: 1px solid #404040;
+  color: #eee; }
+
+/* moblie header end */
+/* moblie footer */
+.resize_footer_to_mobile {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+/* moblie footer end */
+/* body */
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 25px;
+  background: white; }
+
+body.content-ntm .page-container {
+  background-color: white; }
+
+body {
+  font-family: 'Roboto Condensed', sans-serif !important; }
+
+.fixed_background_image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../../../wp-content/uploads/2015/09/footer_lodyas1.png");
+  position: fixed;
+  z-index: -1; }
+
+.moblieBanner {
+  display: none; }
+
+a:hover {
+  color: white; }
+
+a:hover {
+  color: #9A9A9A; }
+
+section.blog .post .post-image .thumb-hover {
+  background: #ABABAB; }
+
+/*my account edit section*/
+> section.wpb_wrapper > div.container {
+  max-width: 100%; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 300 !important; }
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
+    font-weight: 300 !important; }
+
+/* body end */
+/* buttons */
+/*  defines styling for the buttons used on the layersilders on the homepage */
+.btn-shop {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: #666666 2px 1px 5px;
+  -webkit-box-shadow: #666666 2px 1px 5px;
+  box-shadow: #666666 2px 1px 5px;
+  font-family: Courier New;
+  font-size: 20px;
+  padding: 13px 22px 13px 22px;
+  border: solid #ffffff 2px;
+  text-decoration: none;
+  color: white;
+  /*defines the hover styling for the buttons used on the layersilders */ }
+  .btn-shop:hover {
+    background: #ffffff;
+    text-shadow: none;
+    font-color: black;
+    text-decoration: none;
+    color: black;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in; }
+
+.btn-alert {
+  background: #ff1f1f;
+  color: white; }
+  .btn-alert:hover {
+    background: #ff8c8c;
+    text-decoration: none;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    color: white; }
+
+/* buttons end */
+/* hover zoom */
+/*adds a white background to the single product hover feature.*/
+.imagezoom-view {
+  background-color: white; }
+
+/* hover zoom end */
+/* silder */
+/* defines the border around the layersilder on the homepage */
+.ls-inner {
+  border-color: #E2E2E2;
+  border-style: solid;
+  border-width: 2px;
+  font-family: "Roboto", sans-serif; }
+
+/* defines text shadow on the layersilders on the homepage */
+.ls-l {
+  color: #e0e0e0;
+  text-shadow: rgba(0, 0, 0, 0.294) 1px 1px 5px, rgba(0, 0, 0, 0.294) 1px 1px 0, rgba(0, 0, 0, 0.294) 1px 2px 0; }
+
+.hover_cat:hover {
+  display: none; }
+
+/* silder end */
+/* quick links */
+/*used to define the styling on the links at the top of the homepage.*/
+.homepage_quick_links {
+  color: #585858;
+  height: 1.5em;
+  margin-top: 5px;
+  border-right-color: #969696;
+  border-right-style: solid;
+  border-right-width: 1px; }
+
+/*fixes a bug where the last links margin*/
+.no_margin_bottom {
+  height: 35px;
+  margin-bottom: 0px !important; }
+
+@media screen and (max-width: 300px) {
+  .homepage_quick_links {
+    display: none; } }
+/* quick links end */
+/* cart */
+.view-cart .product-quantity, .view-cart .product-subtotal {
+  padding-right: 0px; }
+
+.shop .shop-item .onsale.featured, .woocommerce .shop-item .onsale.featured {
+  background-color: #222; }
+
+.shop-empty-cart-page {
+  background: #717171; }
+
+header.site-header .header-widgets .cart-counter.has-notifications .badge {
+  background-color: #797979; }
+
+/* cart end */
+/* advice guide */
+.advice_guide {
+  border-color: #EBEBEB;
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 4px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+.advice_guide:hover {
+  background-color: rgba(236, 235, 235, 0.2); }
+
+.advice_guide_image {
+  margin-top: 15px; }
+
+.advice_guide_image:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9; }
+
+.advice_guide_box {
+  margin-bottom: 0px; }
+
+/*used on the advice guide landing page to give a hover effect.*/
+.custom_cat_style {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: fadeOut;
+  -o-transition-timing-function: fadeOut;
+  -webkit-transition-timing-function: fadeOut;
+  transition-timing-function: fadeOut; }
+
+.custom_cat_style:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    background-color: cyan; }
+  100% {
+    background-color: rgba(0, 235, 235, 0.2); } }
+@keyframes fadeOut {
+  0% {
+    background-color: cyan; }
+  100% {
+    background-color: rgba(0, 235, 235, 0.2); } }
+/* advice guide end */
+/*wishlist*/
+.wishlist_table .add_to_cart.button {
+  display: block; }
+
+/*wishlist end*/
+/*edit account*/
+.wpb_alert p:last-child, #content .wpb_alert p:last-child, .wpb_text_column p:last-child, .wpb_text_column *:last-child, #content .wpb_text_column p:last-child, #content .wpb_text_column *:last-child, .wpb_toggle_content p:last-child {
+  max-width: 100%; }
+
+/*edit account end*/
+/*news widget*/
+.mc4wp-form p > label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+.mc4wp-form p > input {
+  height: 35px; }
+
+/*news widget end*/
+/*contact form*/
+.contactbuddy-form {
+  /*Labels*/
+  /*inputs*/
+  /*buttons*/ }
+  .contactbuddy-form .contactbuddy-name-label > label, .contactbuddy-form .contactbuddy-email-label > label, .contactbuddy-form .contactbuddy-subject-label > label, .contactbuddy-form .contactbuddy-message-label > label {
+    font-size: 30px;
+    font-weight: 300;
+    color: #222222; }
+  .contactbuddy-form .contactbuddy-name-input > input, .contactbuddy-form .contactbuddy-email-input > input, .contactbuddy-form .contactbuddy-subject-input > input, .contactbuddy-form .contactbuddy-message-input > input {
+    font-size: 15px;
+    height: 35px; }
+
+/*contact form end*/
+/*page*/
+/*page end*/
+/*social login*/
+div#oneall_social_login_providers_5344725 {
+  display: none; }
+
+/*social login end*/
+/*signup persons title*/
+#login-user-title {
+  margin-bottom: 20px; }
+
+/*signup persons title end*/
+/* woocommerce */
+/*sets the font size on the product list page.*/
+.shop .shop-item .item-info h3 a, .woocommerce .shop-item .item-info h3 a {
+  font-size: 17px; }
+
+/*sets the featured icon to be round when in moblie.*/
+.shop .shop-item .onsale.featured, .woocommerce .shop-item .onsale.featured {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px; }
+
+/*Fixes the bug that makes the text over flow to the add to cart icon and option icon*/
+h3.no-right-margin {
+  padding-left: 5px; }
+
+/*Sets the hover effect on the flags. Single product.*/
+img.vc_single_image-img.attachment-thumbnail:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5; }
+
+.onsale {
+  background-color: #B57700; }
+
+.woocommerce-result-count {
+  font-size: 16px; }
+
+button.toggle-row {
+  display: none; }
+
+/* woocommerce end */
