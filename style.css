@@ -8,3 +8,122 @@ Template: aurum
 License: GNU General Public License v2 or later
 License URI: license/README_License.txt
 */
+/* Base */
+/* Base end */
+/*
+Theme Name: Aurum child
+Author: Laborator | James Hudson
+Author URI: http://laborator.co/ | http://www.electrastim.com
+Description: Aurum &ndash; its a minimalist WooCommerce theme that will give you and your customers a smooth shopping experience which can be used for various kinds of stores such as boutiques, bookstores, technology stores, jewelries and other types of web shops. It is beautiful, flexible and  super fast theme.
+Version: 2.5
+Template: aurum
+License: GNU General Public License v2 or later
+License URI: license/README_License.txt
+*/
+/* Hover Zoom */
+/*adds a white background to the single product hover feature.*/
+.imagezoom-view {
+  background-color: white; }
+
+/* Hover Zoom end */
+/* News Widget */
+.mc4wp-form p > label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+.mc4wp-form p > input {
+  height: 35px; }
+
+/* News Widgets end */
+/* Silder */
+/* defines the border around the layersilder on the homepage */
+.ls-inner {
+  border-color: #E2E2E2;
+  border-style: solid;
+  border-width: 2px;
+  font-family: "Roboto", sans-serif; }
+
+/* defines text shadow on the layersilders on the homepage */
+.ls-l {
+  color: #e0e0e0; }
+
+.hover_cat:hover {
+  display: none; }
+
+/* Silder end */
+/* Header */
+header {
+  /*Changes the background colour of the sub menu when the user is hovering over an item*/ }
+  header.site-header {
+    background: #222; }
+  header > .container {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    background-color: #222; }
+  header.site-header.sticky.sticked div.nav > ul > li > a:after, header.site-header.sticky.sticked ul.nav > li > a:after {
+    background-color: #eee; }
+  header.site-header div.nav > ul li ul li.current-menu-ancestor > a, header.site-header div.nav > ul li ul li.current-menu-item > a, header.site-header div.nav > ul li ul li.current_page_ancestor > a, header.site-header div.nav > ul li ul li.current_page_item > a, header.site-header ul.nav li ul li.current-menu-ancestor > a, header.site-header ul.nav li ul li.current-menu-item > a, header.site-header ul.nav li ul li.current_page_ancestor > a, header.site-header ul.nav li ul li.current_page_item > a {
+    background-color: #848484; }
+  header.site-header div.nav > ul > li > a:after, header.site-header ul.nav > li > a:after {
+    background: #eee; }
+  header.site-header ul.nav > li:hover > a {
+    background-color: #545454; }
+  header.site-header div.nav > ul li.sub-visible > a, header.site-header ul.nav li.sub-visible > a {
+    background-color: #545454; }
+  header.site-header div.nav > ul li ul, header.site-header ul.nav li ul {
+    background-color: #545454; }
+  header.site-header div.nav > ul > li > a:hover, header.site-header ul.nav > li > a:hover {
+    color: #eee; }
+  header.site-header div.nav > ul > li, header.site-header ul.nav > li:hover {
+    color: #eee; }
+  .sub-menu > header.site-header div.nav > ul li a:hover, header.site-header ul.nav li a:hover {
+    color: #eee; }
+  .sub-menu > header.site-header div.nav > ul li a:hover, header.site-header ul.nav li a:hover {
+    color: #222; }
+  header.site-header.sticky.sticked div.nav > ul > li > a:after, header.site-header.sticky.sticked ul.nav > li > a:after {
+    background-color: #222; }
+  .sub-menu > header.site-header div.nav > ul li a:hover, header.site-header ul.nav li a:hover {
+    color: #eee;
+    text-decoration: none; }
+  header .header.site-header div.nav > ul li a, header.site-header ul.nav li a:hover {
+    color: #eee; }
+  header.site-header div.nav > ul li ul li:hover > a, header.site-header ul.nav li ul li:hover > a {
+    color: #eee; }
+  header.site-header.sticky.sticked div.nav > ul > li > a:after, header.site-header.sticky.sticked ul.nav > li > a:after {
+    background-color: white; }
+  header.site-header div.nav > ul li ul li:hover > a, header.site-header ul.nav li ul li:hover > a {
+    background-color: rgba(255, 255, 255, 0.2); }
+
+/*gets reid of the bug that makes the nav button show up white when clicked*/
+.nav > li > a:hover, .nav > li > a:focus {
+  background: #222; }
+
+div.nav > ul li a, header.site-header ul.nav li a:selection {
+  color: #fff; }
+
+.header.site-header div.nav > ul li a, header.site-header ul.nav li a {
+  color: #eee; }
+
+.header.site-header.sticky.sticked div.nav > ul > li > a, header.site-header.sticky.sticked ul.nav > li > a {
+  color: #eee; }
+
+/*gets reid of the bug that makes the nav button show up white when clicked*/
+.nav > li > a:hover, .nav > li > a:focus {
+  background: #222; }
+
+.site-header .ubermenu.ubermenu-skin-none .ubermenu-item.ubermenu-item-level-0:hover > .ubermenu-target {
+  background-color: #545454; }
+
+/* Header end */
+/* Footer */
+.footer-widgets {
+  max-width: 100%;
+  padding-left: 15px; }
+
+footer > .container {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  background-color: #222; }
+
+/* Footer end */

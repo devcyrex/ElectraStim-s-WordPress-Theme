@@ -44,10 +44,10 @@ header{
 	&.site-header div.nav>ul>li>a:hover, &.site-header ul.nav>li>a:hover{
 		color: $desktop_header_colour_hover;
 
-		@include transition-property(all);
-    	@include transition-duration(0.2s);
+		//@include transition-property(all);
+        //@include transition-duration(0.2s);
 
-    	@include transition-timing-function(ease-in);
+    	//@include transition-timing-function(ease-in);
 	}
 
 	//top level font hover colour.

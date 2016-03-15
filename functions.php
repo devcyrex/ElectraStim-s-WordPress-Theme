@@ -3,20 +3,18 @@
 // require_once get_template_directory() . '-child/library/ReCaptcha.php';
 require_once ("vendor/autoload.php");
 
-$styles = new \modules\util\ClientScriptsStyles();
+if(class_exists("\modules\util\ClientScriptsStyles")){
 
-//adding styles to the theme.
-$styles->addStyles('custom-css', 
-                   get_template_directory_uri() . "-child/assets/css/screen.css", 
-                   array('aurum-main'));
+  $styles = new \modules\util\ClientScriptsStyles();
 
-$styles->addMobileStyle('custom-mobile-css', 
-                        get_template_directory_uri() . "-child/assets/css/mobile.css", 
-                        array('custom-css'));
+  $styles->addMobileStyle('custom-mobile-css',
+                          get_template_directory_uri() . "-child/assets/css/mobile.css",
+                          array('custom-css'));
 
-$styles->addDesktopStyle('custom-desktop-css', 
-                         get_template_directory_uri() . "-child/assets/css/desktop.css", 
-                         array('custom-css'));
+  $styles->addDesktopStyle('custom-desktop-css',
+                           get_template_directory_uri() . "-child/assets/css/desktop.css",
+                           array('custom-css'));
+}
 
 function lab_get_svg_child($svg_path, $id = null, $size = array(24, 24), $is_asset = true){
 
