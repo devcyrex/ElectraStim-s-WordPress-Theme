@@ -4,6 +4,8 @@
  *
  *	Laborator.co
  *	www.laborator.co
+ *
+ * Again edited by James Hudson
  */
 
 
@@ -24,5 +26,6 @@
 	</head>
 	<body <?php body_class(); ?>>
 
+		<!-- Adding background texture, James Hudson. -->
 		<div class="fixed_background_image"></div>
 		<?php if( ! defined("LAB_HEADERLESS")) get_template_part('tpls/header'); ?>

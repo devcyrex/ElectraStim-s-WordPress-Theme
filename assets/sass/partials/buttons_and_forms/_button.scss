@@ -1,9 +1,12 @@
+@import "compass/css3/transition";
+@import "compass/css3/border-radius";
+
 /*  defines styling for the buttons used on the layersilders on the homepage */
 .btn-shop {
 
   @include border-radius(0);
   
-  @include box-shadow(#666666 2px 1px 5px);
+  //@include box-shadow(#666666 2px 1px 5px);
   
   font-family: Courier New;
   font-size: 20px;

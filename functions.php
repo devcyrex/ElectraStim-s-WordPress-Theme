@@ -1,11 +1,12 @@
 <?php
 
-// require_once get_template_directory() . '-child/library/ReCaptcha.php';
 require_once ("vendor/autoload.php");
 
 if(class_exists("\modules\util\ClientScriptsStyles")){
 
   $styles = new \modules\util\ClientScriptsStyles();
+
+    $styles->addStyles("custom-css", get_template_directory_uri() . "-child/style.css", array());
 
   $styles->addMobileStyle('custom-mobile-css',
                           get_template_directory_uri() . "-child/assets/css/mobile.css",
