@@ -1,0 +1,57 @@
+@import "compass/css3/transition";
+@import "compass/css3/opacity";
+
+.advice_guide {
+	border-color: #EBEBEB;
+	border-width: 1px;
+	border-style: solid;
+	
+	padding-left:4px;
+
+	//@include border-radius(5px);
+}
+
+.advice_guide:hover{
+	
+	background-color:rgba(236, 235, 235, 0.2);
+} 
+
+.advice_guide_image{
+	
+	margin-top:15px;
+}
+
+.advice_guide_image:hover{
+	
+	@include opacity(0.9);
+}
+
+.advice_guide_box{
+	margin-bottom: 0px;	
+}
+
+/*used on the advice guide landing page to give a hover effect.*/
+.custom_cat_style{
+
+	@include transition-property(all);
+    @include transition-duration(0.2s);
+
+    @include transition-timing-function(fadeOut);
+}
+
+.custom_cat_style:hover{
+	
+	@include opacity(0.7);
+
+    // animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut { 
+    0% {background-color: rgb(0, 255, 255);} 
+    100% {background-color: rgba(0, 235, 235, 0.2)} 
+
+  } 
+@keyframes fadeOut { 
+	0% {background-color: rgb(0, 255, 255);} 
+	100% {background-color: rgba(0, 235, 235, 0.2);} 
+}

@@ -15,6 +15,9 @@ if(class_exists("\modules\util\ClientScriptsStyles")){
   $styles->addDesktopStyle('custom-desktop-css',
                            get_template_directory_uri() . "-child/assets/css/desktop.css",
                            array('custom-css'));
+
+    $styles->removeStyle('aurum-main');
+    $styles->removeStyle('style');
 }
 
 function lab_get_svg_child($svg_path, $id = null, $size = array(24, 24), $is_asset = true){
