@@ -1,3 +1,5 @@
+/* Again edited by James Hudson */
+
 // Added after implementation of WooCommerce in WP
 .shop {
 	padding: 20px 0;
@@ -1410,7 +1412,7 @@
 
 // Empty Cart
 .shop-empty-cart-page {
-	background: @menu-color;
+	//background: @menu-color; James Hudson: Removed background colour
 	padding: 200px 0;
 	border: 1px solid @top-menu-text;
 
@@ -1434,7 +1436,7 @@
 
 			i {
 				display: block;
-				background: url(../images/cart-bag-smiley.png) no-repeat center center;
+				background: url(assets/images/cart-bag-smiley.png) no-repeat center center;// James Hudson: updated url
 				height: 100%;
 				position: absolute;
 				left: 0; right: 0;
@@ -1446,7 +1448,7 @@
 				&.cart-smiley-hands {
 					.transition(~"all 500ms linear");
 					.transition-delay(0);
-					background: url(../images/cart-bag-smiley-hands.png) no-repeat center bottom;
+					background: url(assets/images/cart-bag-smiley-hands.png) no-repeat center bottom;// James Hudson: updated url
 				}
 			}
 
@@ -1460,7 +1462,7 @@
 		}
 
 		.cart-bag {
-			background: url(../images/cart-bag-empty.png) no-repeat;
+			background: url(assets/images/cart-bag-empty.png) no-repeat;// James Hudson: updated url
 			.size(170px, 172px);
 		}
 	}

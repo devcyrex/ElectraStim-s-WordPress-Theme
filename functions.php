@@ -18,6 +18,9 @@ if(class_exists("\modules\util\ClientScriptsStyles")){
 
     $styles->removeStyle('aurum-main');
     $styles->removeStyle('style');
+//    $styles->removeStyle('bootstrap');
+
+    $styles->addStyles('bootstrap', get_template_directory_uri() . '-child/assets/css/bootstrap.css', array());
 }
 
 function lab_get_svg_child($svg_path, $id = null, $size = array(24, 24), $is_asset = true){

@@ -33,6 +33,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/bootstrap.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/bootstrap.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/fonts\/entypo-regular\/entypo.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -114,14 +123,38 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/css\/style.css": {
-		"fileType": 16,
-		"ignore": 1,
+	"\/images\/cart-bag-empty.png": {
+		"fileType": 32768,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 1230,
+		"inputAbbreviatedPath": "\/images\/cart-bag-empty.png",
+		"outputAbbreviatedPath": "\/images\/cart-bag-empty.png",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cart-bag-smiley-hands.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 260,
+		"inputAbbreviatedPath": "\/images\/cart-bag-smiley-hands.png",
+		"outputAbbreviatedPath": "\/images\/cart-bag-smiley-hands.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cart-bag-smiley.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 880,
+		"inputAbbreviatedPath": "\/images\/cart-bag-smiley.png",
+		"outputAbbreviatedPath": "\/images\/cart-bag-smiley.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/js\/main.js": {
 		"fileType": 64,
@@ -862,6 +895,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/less\/aurum-less\/wpml.less",
 		"outputAbbreviatedPath": "\/less\/css\/wpml.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/less\/bootstrap.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/bootstrap.less",
+		"outputAbbreviatedPath": "\/css\/bootstrap.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

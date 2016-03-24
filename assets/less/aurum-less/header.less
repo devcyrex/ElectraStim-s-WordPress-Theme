@@ -264,7 +264,7 @@ header.site-header {
 						}
 
 						&:hover > a {
-							background-color: lighten(@top-menu-bg, 5%);
+							//background-color: lighten(@top-menu-bg, 5%);
 						}
 
 						&.active {
@@ -710,7 +710,8 @@ header.site-header {
 				display: block;
 				font-weight: 300;
 				text-transform: uppercase;
-				color: @menu-color;
+				//color: @menu-color; James Hudson: Removed defult link colour.
+				color: #eee; // James Hudson: added new menu item colour.
 
 				i {
 					display: inline-block;
@@ -736,7 +737,7 @@ header.site-header {
 				list-style: none;
 				padding: @default-padding 0;
 				margin: 0;
-				background-color: @submenu;
+				//background-color: @submenu;
 				min-width: @submenu-width;
 
 				li {
@@ -768,7 +769,7 @@ header.site-header {
 					&.current_page_ancestor {
 
 						> a {
-							background-color: darken(@submenu, 3%);
+							//background-color: darken(@submenu, 3%);
 						}
 					}
 
@@ -796,7 +797,7 @@ header.site-header {
 			&.sub-visible {
 
 				> a {
-					background-color: @submenu;
+					//background-color: @submenu;
 				}
 
 				> ul {
@@ -820,11 +821,11 @@ header.site-header {
 
 				.transparent-header & {
 					color: @transparent-header-font;
-					background-color: transparent;
+					//background-color: transparent;
 
 					&:hover {
 						color: @transparent-header-font;
-						background-color: fade(@transparent-header-font, @transparent-header-trans-pct);
+						//background-color: fade(@transparent-header-font, @transparent-header-trans-pct);
 					}
 				}
 
@@ -849,12 +850,14 @@ header.site-header {
 			.transparent-header & {
 
 				&:hover > a {
-					background-color: fade(@transparent-header-font, @transparent-header-trans-pct);
+					//background-color: fade(@transparent-header-font, @transparent-header-trans-pct);
 				}
 			}
 
+			//James Hudson: This style is for the top level menu item colour when the user us hovering.
 			&:hover > a {
-				background-color: @submenu;
+				//background-color: @submenu; James Hudson: old colour.
+				background-color: #eee; // James Hudson: new colour.
 			}
 
 			&.current-menu-item,
@@ -973,7 +976,7 @@ header.site-header {
 				top: 0px;
 				left: -5px;
 				position: absolute;
-				background-color: @secondary-color;
+				//background-color: @secondary-color;
 				text-align: center;
 				padding: 0;
 				line-height: @s2;
@@ -1079,7 +1082,7 @@ header.site-header {
 				top: 0;
 
 				.transparent-header & {
-					background-color: @transparent-header-font;
+					//background-color: @transparent-header-font;
 
 					.ubermenu.ubermenu-skin-none .ubermenu-item {
 
@@ -1091,7 +1094,7 @@ header.site-header {
 									color: @menu-color;
 
 									&:after {
-										background-color: @heading;
+										//background-color: @heading;
 									}
 								}
 							}
@@ -1572,7 +1575,7 @@ header.mobile-menu {
 		}
 
 		.items-count {
-			background-color: @secondary-color;
+			//background-color: @secondary-color;
 			float: right;
 			position: relative;
 			top: 3px;
@@ -1647,7 +1650,7 @@ header.mobile-menu {
 
 
 .top-menu div.currency-switcher select.wcml_currency_switcher {
-    background-color: #222222; 
+    //background-color: #222222;
     border: none !important;
     color: #fff;
 }
