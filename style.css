@@ -187,6 +187,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, small, a {
   font-weight: 300 !important; }
 
 /* body end */
+@font-face {
+  font-family: 'bankgothic';
+  src: url("assets/fonts/bankgothic_md_bt_medium-webfont.eot");
+  src: url("assets/fonts/bankgothic_md_bt_medium-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/bankgothic_md_bt_medium-webfont.woff2") format("woff2"), url("assets/fonts/bankgothic_md_bt_medium-webfont.woff") format("woff"), url("assets/fonts/bankgothic_md_bt_medium-webfont.ttf") format("truetype"), url("assets/fonts/bankgothic_md_bt_medium-webfont.svg#bankgothic_md_btmedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /* buttons */
 /*  defines styling for the buttons used on the layersilders on the homepage */
 .btn-shop {
@@ -409,6 +415,12 @@ img.vc_single_image-img.attachment-thumbnail:hover {
 
 /*contact form end*/
 /*page*/
+.wpb_single_image.vc_align_center {
+  text-align: left !important; }
+
+.flags {
+  padding-bottom: 15px; }
+
 /*page end*/
 /*social login*/
 div#oneall_social_login_providers_5344725 {
