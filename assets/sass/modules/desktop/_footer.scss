@@ -1,0 +1,25 @@
+.footer-widgets{
+	
+	max-width: 100%;
+	padding-left: 15px;
+}
+
+footer{
+
+	> .container{
+		//padding-right: 0px;
+		//padding-left: 0px;
+    	//padding-top: 0px;
+		background-color: #222;
+	}
+
+	&.site-footer{
+		background-color: #222;
+	}
+
+	&.site-footer .footer-bottom {
+
+		border-color: #3a3a3a;
+	}
+}
+

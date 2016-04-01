@@ -10,15 +10,5 @@
       "homepage": "http://www.hudson.gb.com",
       "role": "Developer"
     }
-  ],
-
-  "require-dev":{
-    "phpunit/phpunit": "4.0.0"
-  },
-
-  "autoload": {
-    "classmap": [
-      "include/modules"
-    ]
-  }
+  ]
 }

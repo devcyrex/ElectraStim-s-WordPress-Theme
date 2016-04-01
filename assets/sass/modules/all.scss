@@ -1,9 +1,28 @@
-/* Base */
+@import "compass/css3";
+
+@import "colour";
 @import "base";
-/* Base end */
 
-@import "bs-less/variables";
+/* utility */
+@import "utility";
+/* utility end */
 
-@import "mixins/all";
+/* desktop header */
+@import "desktop/header";
+/* desktop header end */
 
-@import "colours/all";
+/* desktop footer */
+@import "desktop/footer";
+/* desktop footer end */
+
+/* moblie header */
+@import "moblie/header";
+/* moblie header end */
+
+/* moblie footer */
+@import "moblie/footer";
+/* moblie footer end */
+
+/* body */
+@import "body";
+/* body end */

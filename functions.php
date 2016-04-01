@@ -6,27 +6,25 @@ if(class_exists("\modules\util\ClientScriptsStyles")){
 
   $styles = new \modules\util\ClientScriptsStyles();
 
-    $styles->addStyles("custom-css", get_template_directory_uri() . "-child/style.css", array());
+    $styles->addStyles("custom-css", get_template_directory_uri() . "-child-updated/style.css", array('aurum-main'));
 
   $styles->addMobileStyle('custom-mobile-css',
-                          get_template_directory_uri() . "-child/assets/css/mobile.css",
+                          get_template_directory_uri() . "-child-updated/assets/css/mobile.css",
                           array('custom-css'));
 
   $styles->addDesktopStyle('custom-desktop-css',
-                           get_template_directory_uri() . "-child/assets/css/desktop.css",
+                           get_template_directory_uri() . "-child-updated/assets/css/desktop.css",
                            array('custom-css'));
 
-    $styles->removeStyle('aurum-main');
-    $styles->removeStyle('style');
-//    $styles->removeStyle('bootstrap');
-
-    $styles->addStyles('bootstrap', get_template_directory_uri() . '-child/assets/css/bootstrap.css', array());
+    $styles->addDesktopStyle('custom-desktop-css',
+        get_template_directory_uri() . "-child-updated/assets/css/home.css",
+        array('custom-css'));
 }
 
 function lab_get_svg_child($svg_path, $id = null, $size = array(24, 24), $is_asset = true){
 
     if($is_asset)
-      $svg_path = get_template_directory() . '-child/assets/' .  $svg_path;
+      $svg_path = get_template_directory() . '-child-updated/assets/' .  $svg_path;
 
     if( ! $id)
       $id = sanitize_title(basename($svg_path));

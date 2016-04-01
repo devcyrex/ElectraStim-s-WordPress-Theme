@@ -1,17 +1,58 @@
-//@import "aurum/aurum";
+@import "compass/css3";
+@import "compass/reset/utilities";
+//@import "../../bower_components/animate.sass/stylesheets/animate";
 
-@import "global-classes";
+@import "base";
+@import "colour";
 
-@import "actions/all";
+/* buttons */
+@import "button";
+/* buttons end */
 
-//@import "buttons_and_forms/all";
+/* hover zoom */
+@import "hover_zoom";
+/* hover zoom end */
 
-//@import "desktop/all";
+/* silder */
+@import "silder";
+/* silder end */
 
-//@import "moblie/all";
+/* quick links */
+@import "quick_links";
+/* quick links end */
 
-@import "page/all";
+/* cart */
+@import "cart";
+/* cart end */
 
-@import "tools/all";
+/* woocommerce */
+@import "woocommerce";
+/* woocommerce end */
 
-//@import "woocommerce/all";
+/* advice guide */
+@import "advice_guide";
+/* advice guide end */
+
+/*wishlist*/
+@import "wishlist";
+/*wishlist end*/
+
+/*edit account*/
+@import "edit_account";
+/*edit account end*/
+
+/*news widget*/
+@import "news_widget";
+/*news widget end*/
+
+/*contact form*/
+@import "contact_form";
+/*contact form end*/
+
+/*page*/
+@import "page";
+/*page end*/
+
+/*social login*/
+@import "social_login"
+/*social login end*/
