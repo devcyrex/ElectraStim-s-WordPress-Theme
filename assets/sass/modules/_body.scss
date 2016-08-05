@@ -62,3 +62,8 @@ h5, .h5         { font-size: .83em; margin: 1.5em 0 }
 h6  .h6         { font-size: .75em; margin: 1.67em 0 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4,
 h5, .h5, h6, .h6          { font-weight: bolder }
+
+//quick hack to remove product tags from listing. TODO ROMOVE WHEN FAND OUT WHY TAGS ARE BROKEN.
+span.product-terms {
+	display: none;
+}

@@ -629,10 +629,10 @@ function has_transparent_header()
 
 
 # Get SVG
-function lab_get_svg($svg_path, $id = null, $size = array(24, 24), $is_asset = true)
+function lab_get_svg_child($svg_path, $id = null, $size = array(24, 24), $is_asset = true)
 {
 	if($is_asset)
-		$svg_path = get_template_directory() . '/assets/' .  $svg_path;
+		$svg_path = get_template_directory() . '-child/assets/' .  $svg_path;
 
 	if( ! $id)
 		$id = sanitize_title(basename($svg_path));
